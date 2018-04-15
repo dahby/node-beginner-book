@@ -42,7 +42,7 @@ function upload(response, request) {
   });
 }
 
-function show(response, postData) {
+function show(response) {
   console.log("Request handler 'show' was called.");
   fs.readFile('/tmp/test.png', 'binary', (error, file) => {
     if (error) {
